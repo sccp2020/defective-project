@@ -1,0 +1,2 @@
+def sample():
+    return "Hello"
