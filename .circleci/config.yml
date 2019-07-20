@@ -4,6 +4,8 @@ jobs:
     working_directory: ~/defective-project
     docker:
       - image: circleci/python:3.6.7
+        environment:
+          PYTHONPATH: $HOME/defective-project
     steps:
       - checkout
       - run:
