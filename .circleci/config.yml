@@ -4,10 +4,11 @@ jobs:
     working_directory: ~/defective-project
     docker:
       - image: circleci/python:3.6.7
+        environment:
+          PYTHONPATH: defective-project
     steps:
       - checkout
       - run:
           name: run test
           command: |
-            export PYTHONPATH=/home/circleci/defective-project
             python3 -m unittest discover tests
