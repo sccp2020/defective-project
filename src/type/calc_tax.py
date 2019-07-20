@@ -1,2 +1,2 @@
-def calc_tax(price, tax_rate):
-    return price * tax_rate
+def calc_tax(price, per):
+    return price * per
