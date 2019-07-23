@@ -1,0 +1,12 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/defective-project
+    docker:
+      - image: circleci/python:3.6.7
+    steps:
+      - checkout
+      - run:
+          name: run test
+          command: |
+            python3 -m unittest discover tests
