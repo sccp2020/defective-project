@@ -1,5 +1,7 @@
 # defective-project
 
+[![CircleCI](https://circleci.com/gh/sccp2020/defective-project.svg?style=svg)](https://circleci.com/gh/sccp2020/defective-project)
+
 このプロジェクトはバグだらけのプロジェクトです。皆さんの力ですべてのバグを取り除いてください。
 
 ## バグの取り除き方
