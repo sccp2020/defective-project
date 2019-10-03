@@ -1,2 +1,2 @@
 def calc_number_of_digit(num):
-    return 1
+    return len(num)
