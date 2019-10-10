@@ -10,3 +10,7 @@ class TestTriangle(unittest.TestCase):
     def test_triangl2(self):
         actual = triangle(3, 3, 7)
         self.assertFalse(actual)
+
+    def test_triangl3(self):
+        actual = triangle(2, 2, 2)
+        self.assertTrue(actual)
