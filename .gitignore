@@ -126,3 +126,6 @@ dmypy.json
 # UOA
 *~
 \#*#
+
+*.DS_Store*
+._README.md
