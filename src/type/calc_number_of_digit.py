@@ -1,8 +1,6 @@
 def calc_number_of_digit(num):
-    cnt = 0
-    while num > 0:
-        t = num%10
-        for j in range(10):
-            if t == j : cnt += 1
-        num = num//10
+    cnt=len(str(num))
+    for i in range(len(str(num))):
+        if ord(str(num)[i])<48 or ord(str(num)[i])>57:
+            cnt-=1
     return cnt
