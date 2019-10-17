@@ -1,3 +1,5 @@
 # ax + b = 0
+import math
 def solve_equation(a, b):
-    return b - a
+    gcd = math.gcd(a,b)
+    return gcd
