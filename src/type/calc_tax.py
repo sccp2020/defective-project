@@ -1,2 +1,2 @@
 def calc_tax(price, per):
-    return int(float(price) * float(per))
+    return int((price) * (per))
