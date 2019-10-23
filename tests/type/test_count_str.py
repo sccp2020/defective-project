@@ -8,6 +8,6 @@ class TestCountStr(unittest.TestCase):
         self.assertEqual(expected, actual)
 
     def test_count_str2(self):
-        expected = {"a":0, "b":5, "c":1}
+        expected = {"b":5, "c":1}
         actual = count_str("bbcbbb")
         self.assertEqual(expected, actual)
