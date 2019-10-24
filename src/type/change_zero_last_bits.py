@@ -5,4 +5,4 @@ def change_zero_last_bits(bits, num_of_bits):
 
     return int("".join(bits_list))
 
-# hint: bitsとして渡された二進数を、num_of_bits桁分の0と論理積をとります。
+# hint: bitsとして渡された数字と、num_of_bits桁分の0の論理積をとります。
