@@ -5,4 +5,16 @@
 #       CANNOT use library
 
 def gcd(a, b):
-    return 0
+    
+    if a < b:
+        tmp = b
+        b = a
+        a = tmp
+
+    r = a % b
+    while(r != 0):
+        a = b
+        b = r
+        r = a % b
+
+    return b
