@@ -12,5 +12,7 @@
 # [1, 2, 5, 4, 6, 3]
 
 def merge(arr1, arr2):
+    return []
 
 def msort(arr):
+    return []

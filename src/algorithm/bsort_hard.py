@@ -9,8 +9,8 @@
 # [(1), 4, 3, 2, 5]   => Left end is minimum value
 
 def bswap(arr):
-    # add code
+    return []
 
 def bsort(arr):
-    # add code
+    return []
 
