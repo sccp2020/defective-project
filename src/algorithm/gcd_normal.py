@@ -4,17 +4,7 @@
 # NOTE: SHOULD use Euclidean Algorithm
 #       CANNOT use library
 
-def gcd(a, b):
-    
-    if a < b:
-        tmp = b
-        b = a
-        a = tmp
-
-    r = a % b
-    while(r != 0):
-        a = b
-        b = r
-        r = a % b
-
-    return b
+def gcd(a, b) :
+    if a < b : a,b = b,a
+    if b == 0 : return a
+    return gcd(b, a%b)
