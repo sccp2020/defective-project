@@ -1,2 +1,5 @@
 def add_second_digit_number(num1, num2):
-    return int(str(num1)[len(str(num1))-2]) + int(str(num2)[len(str(num2))-2])
+    # return num1 + num2
+    num1 = (num1%100 - num1%10) // 10
+    num2 = (num2%100 - num2%10) // 10
+    return num1 + num2
