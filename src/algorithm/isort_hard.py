@@ -10,7 +10,6 @@ def insert(x, arr):
             a=arr[len(arr)-x]
             del arr[len(arr)-x]
             arr.insert(i,a)
-            break
 
     return insert(x-1,arr)
 
