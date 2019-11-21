@@ -5,4 +5,18 @@
 #       CANNOT use library
 
 def lcm(a, b):
-    return 0
+    storea = a
+    storeb = b
+    if(b > a):
+        temp = a
+        a = b
+        b = temp
+
+    r = a % b
+    while(r != 0):
+        a = b
+        b = r
+        r = a % b
+
+    
+    return (storea * storeb) / b
