@@ -12,3 +12,7 @@ class TestMaxDepthBinaryTree(unittest.TestCase):
         actual = max_depth_binary_tree([1, 2, 3, 4, 5, 6, None, 8])
         self.assertEqual(actual, expected)
 
+    def test_max_depth_binary_tree_cond_3(self):
+        expected = 5
+        actual = max_depth_binary_tree([1, 2, 3, 4, 5, 6, None, 8, 9, 10, 11, 12, 13, 14])
+        self.assertEqual(actual, expected)
