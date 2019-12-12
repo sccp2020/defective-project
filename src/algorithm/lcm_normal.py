@@ -9,5 +9,4 @@ def lcm(a, b):
         t = a % b
         a = b
         b = t
-
     return ab//a
