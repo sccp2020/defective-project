@@ -4,5 +4,6 @@
 # NOTE: if already solved GCD, you can use.
 #       CANNOT use library
 
-def lcm(a, b):
-    return 0
+import math
+def lcm(a, b) :
+    return a * b // math.gcd(a, b)
