@@ -13,11 +13,21 @@
 #      So, max_depth_binary_tree(T) is 4. (coz count(1-2-4-8))
 
 def max_depth_binary_tree(T):
-    i = len(T)
+    i = len(T)-1
     count = 0
-    j = 1
-    while(i >= j):
-        j *= 2  
+    depth = 1
+    x = 2
+    numN = 0
+    while(i > count):
+        if(T[count] == 'None'):
+            numN += 1
+
+        if(count == 0 and i > 1):
+            depth += 1
+        elif(count % x == 0):
+            x = x * 2 - numN * 2
+            depth += 1 
+            numN = 0
         count += 1
         
-    return count
+    return depth
